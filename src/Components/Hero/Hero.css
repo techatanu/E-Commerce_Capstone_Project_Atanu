@@ -1,0 +1,69 @@
+.hero {
+  height: calc(100vh - 70px); /* adjust as per your Navbar height */
+  display: flex;
+  background: linear-gradient(180deg, #FFD9FE, #ffffff 60%);
+  padding: 0 100px;
+  position: relative;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  line-height: 1.1;
+}
+
+.hero-left h2 {
+  color: black;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.hero-left p {
+  color: black;
+  font-size: 80px; /* Decreased for responsiveness */
+  font-weight: 700;
+  margin: 0;
+}
+
+.hero-hand-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.hero-hand-icon img {
+  width: 60px;
+}
+
+.hero-latest-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 250px;
+  height: 70px;
+  border-radius: 65px;
+  background: #ff4757;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-right img {
+  width: 100%;
+  max-width: 500px;
+  object-fit: fill;
+}

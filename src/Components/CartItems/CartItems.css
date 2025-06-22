@@ -1,0 +1,146 @@
+.cartitems {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* ---------- Table Header & Rows ---------- */
+.cartitems-format-main {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 0.7fr;
+  gap: 1rem;
+  align-items: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.cartitems-format {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 0.7fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* CartItems.css */
+.cartitems-product-icon {
+  width: 40px !important;      /* fixed width  */
+  height: 40px !important;     /* fixed height */
+  max-width: 40px;             /* never exceed */
+  max-height: 40px;
+  object-fit: cover;           /* keep aspect / crop */
+  flex-shrink: 0;              /* don’t stretch in grid */
+}
+
+.cartitems-remove-icon {
+  width: 15px;
+  cursor: pointer;
+}
+
+.cartitems-quantity {
+  width: 60px;
+  background: #f3f3f3;
+  border: 1px solid #ddd;
+  padding: 0.4rem 0;
+  cursor: default;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* ---------- Totals & Promo Container ---------- */
+.cartitems-down {
+  margin-top: 2rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;           /* stacks on small screens */
+}
+
+/* ---------- Cart Totals ---------- */
+.cartitems-total {
+  flex: 1 1 300px;
+}
+
+.cartitems-total h1 {
+  text-transform: lowercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.cartitems-total-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.cartitems-total-item h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.cartitems-total button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.8rem;
+  background: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- Promo Code ---------- */
+.cartitems-promocode {
+  flex: 1 1 300px;
+  text-align: right;
+}
+
+.cartitems-promocode p {
+  margin-bottom: 0.75rem;
+}
+
+.cartitems-promobox {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.cartitems-promobox input {
+  background: #f3f3f3;
+  border: none;
+  padding: 0.6rem 1rem;
+  flex: 1;
+  min-width: 150px;
+}
+
+.cartitems-promobox button {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  cursor: pointer;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  .cartitems-down {
+    flex-direction: column;
+  }
+
+  .cartitems-promocode {
+    text-align: left;
+  }
+
+  .cartitems-promobox {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cartitems-promobox button {
+    width: 100%;
+  }
+}
