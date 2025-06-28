@@ -3,7 +3,7 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ---------- Table Header & Rows ---------- */
+
 .cartitems-format-main {
   display: grid;
   grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 0.7fr;
@@ -23,14 +23,14 @@
   padding: 1rem 0;
 }
 
-/* CartItems.css */
+
 .cartitems-product-icon {
-  width: 40px !important;      /* fixed width  */
-  height: 40px !important;     /* fixed height */
-  max-width: 40px;             /* never exceed */
+  width: 40px !important;      
+  height: 40px !important;     
+  max-width: 40px;             
   max-height: 40px;
-  object-fit: cover;           /* keep aspect / crop */
-  flex-shrink: 0;              /* don’t stretch in grid */
+  object-fit: cover;           
+  flex-shrink: 0;              
 }
 
 .cartitems-remove-icon {
@@ -51,15 +51,15 @@ hr {
   border-top: 1px solid #e0e0e0;
 }
 
-/* ---------- Totals & Promo Container ---------- */
+
 .cartitems-down {
   margin-top: 2rem;
   display: flex;
   gap: 2rem;
-  flex-wrap: wrap;           /* stacks on small screens */
+  flex-wrap: wrap;           
 }
 
-/* ---------- Cart Totals ---------- */
+
 .cartitems-total {
   flex: 1 1 300px;
 }
@@ -93,7 +93,7 @@ hr {
   cursor: pointer;
 }
 
-/* ---------- Promo Code ---------- */
+
 .cartitems-promocode {
   flex: 1 1 300px;
   text-align: right;
@@ -125,7 +125,7 @@ hr {
   cursor: pointer;
 }
 
-/* ---------- Responsive ---------- */
+
 @media (max-width: 600px) {
   .cartitems-down {
     flex-direction: column;

@@ -24,9 +24,9 @@ export const CartItems = () => {
                             <div className="cartitems-format cartitems-format-main">
                                 <img src={e.image} alt={e.name} className='cartitems-product-icon'/>
                                 <p>{e.name}</p>
-                                <p>${e.new_price}</p>
+                                <p>₹{e.new_price}</p>
                                 <button className='cartitems-quantity'>{cartItems[e.id]}</button>
-                                <p>${e.new_price * cartItems[e.id]}</p>
+                                <p>₹{e.new_price * cartItems[e.id]}</p>
                                 <img 
                                     className='cartitems-remove-icon'
                                     src="data:image/svg+xml,%3csvg width='15' height='15' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M11.5 3.5L3.5 11.5M3.5 3.5l8 8' stroke='%23ff0000' stroke-width='2' stroke-linecap='round'/%3e%3c/svg%3e" 
@@ -45,7 +45,7 @@ export const CartItems = () => {
                     <h1>Cart Totals</h1>
                     <div className="cartitems-total-item">
                         <p>Subtotal</p>
-                        <p>${getTotalCartAmount()}</p>
+                        <p>₹{getTotalCartAmount()}</p>
                     </div>
                     <hr />
                     <div className="cartitems-total-item">
@@ -55,7 +55,7 @@ export const CartItems = () => {
                     <hr />
                     <div className="cartitems-total-item">
                         <h3>Total</h3>
-                        <h3>${getTotalCartAmount()}</h3>
+                        <h3>₹{getTotalCartAmount()}</h3>
                     </div>
                     <button>PROCEED TO CHECKOUT</button>
                 </div>

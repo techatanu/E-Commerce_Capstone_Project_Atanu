@@ -4,7 +4,6 @@ import data_product from '../Assets/data';
 import { Item } from '../Item/Item';
 
 export const Popular = () => {
-  console.log(data_product); // Add this line to check if data is being imported correctly
   return (
     <div className='popular'>
         <h1>POPULAR IN WOMEN</h1>

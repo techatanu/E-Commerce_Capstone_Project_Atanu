@@ -1,5 +1,5 @@
 .hero {
-  height: calc(100vh - 70px); /* adjust as per your Navbar height */
+  height: calc(100vh - 70px); 
   display: flex;
   background: linear-gradient(180deg, #FFD9FE, #ffffff 60%);
   padding: 0 100px;
@@ -24,7 +24,7 @@
 
 .hero-left p {
   color: black;
-  font-size: 80px; /* Decreased for responsiveness */
+  font-size: 80px; 
   font-weight: 700;
   margin: 0;
 }
