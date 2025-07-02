@@ -1,10 +1,16 @@
-import React, { createContext, useState } from 'react';
-import all_product from '../Components/Assets/all_product';
+import React, { createContext, useState, useEffect } from 'react';
 
 export const ShopContext = createContext(null);
 
 const ShopContextProvider = (props) => {
+  const [all_product, setAllProduct] = useState([]);
   const [cartItems, setCartItems] = useState({});
+
+  useEffect(() => {
+    fetch('https://68640a3388359a373e974c65.mockapi.io/products')
+      .then(res => res.json())
+      .then(data => setAllProduct(data));
+  }, []);
 
   const addToCart = (itemId) => {
     setCartItems((prev) => ({

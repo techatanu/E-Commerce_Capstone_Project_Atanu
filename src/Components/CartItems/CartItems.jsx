@@ -22,7 +22,7 @@ export const CartItems = () => {
                     return (
                         <div key={e.id}>
                             <div className="cartitems-format cartitems-format-main">
-                                <img src={e.image} alt={e.name} className='cartitems-product-icon'/>
+                                <img src={process.env.PUBLIC_URL + '/' + e.image} alt={e.name} className='cartitems-product-icon'/>
                                 <p>{e.name}</p>
                                 <p>₹{e.new_price}</p>
                                 <button className='cartitems-quantity'>{cartItems[e.id]}</button>
