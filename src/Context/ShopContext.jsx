@@ -7,9 +7,18 @@ const ShopContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
 
   useEffect(() => {
-    fetch('https://68640a3388359a373e974c65.mockapi.io/products')
-      .then(res => res.json())
-      .then(data => setAllProduct(data));
+    const fetchProducts = async () => {
+      try {
+        const res = await fetch('https://68640a3388359a373e974c65.mockapi.io/products');
+        if (!res.ok) throw new Error('Network response was not ok');
+        const data = await res.json();
+        setAllProduct(data);
+      } catch (error) {
+        console.error('Failed to fetch products:', error);
+        setAllProduct([]); 
+      }
+    };
+    fetchProducts();
   }, []);
 
   const addToCart = (itemId) => {
