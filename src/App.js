@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Navbar } from './Components/Navbar/Navbar'; 
 import { Home } from './Pages/Home';               
 import { Product } from './Pages/Product';                 
-import { LoginSignUp } from './Pages/LoginSignUp';  
+import Login  from './Pages/Login';  
+import Register  from './Pages/Register';
 import { Shop } from './Pages/Shop'; 
 import { Footer } from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png';
@@ -26,7 +27,8 @@ function AppContent() {
         <Route path='/product' element={<Product />} />
         <Route path='/product/:productId' element={<Product />} />
         <Route path='/men' element={<ShopCategory banner={men_banner} category="men" />} />
-        <Route path='/login' element={<LoginSignUp />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/Register' element={<Register />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/cart' element={<CartItems />} />
       </Routes>
