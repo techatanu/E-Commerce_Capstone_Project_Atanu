@@ -146,7 +146,7 @@ hr {
 }
 
 
-/* Already present, but you can improve: */
+
 @media (max-width: 900px) {
   .cartitems-format-main, .cartitems-format {
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;

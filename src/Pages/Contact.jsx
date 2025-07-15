@@ -1,10 +1,10 @@
 import React from 'react';
-import './Contact.css';
+import './CSS/Contact.css';
 
 export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can add form submission logic here
+    
     alert('Thank you for contacting us!');
   };
 

@@ -14,6 +14,7 @@ import { ShopCategory } from './Pages/ShopCategory';
 import { CartItems } from './Components/CartItems/CartItems';
 import { About } from './Pages/About';
 import { Contact } from './Pages/Contact';
+import { PlaceOrder } from './Pages/PlaceOrder';
 
 
 function AppContent() {
@@ -35,6 +36,7 @@ function AppContent() {
         <Route path='/Register' element={<Register />} />
         <Route path='/shop' element={<Shop />} />
         <Route path='/cart' element={<CartItems />} />
+        <Route path='/placeorder' element={<PlaceOrder />} />
       </Routes>
       {!hideFooter && <Footer />}
     </>

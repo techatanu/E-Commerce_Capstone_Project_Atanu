@@ -67,7 +67,7 @@
 
 
 
-/* Add at the end of the file */
+
 @media (max-width: 1200px) {
   .shopcategory-products {
     grid-template-columns: 1fr 1fr 1fr;
