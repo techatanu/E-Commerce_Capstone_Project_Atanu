@@ -6,10 +6,10 @@ import { Item } from '../Item/Item';
 export const RelatedProducts = ({ category, excludeId }) => {
   const { all_product } = useContext(ShopContext);
 
-  // Show related products from the same category, excluding the current product
+
   const related = all_product.filter(
     (item) => item.category === category && item.id !== excludeId
-  ).slice(0, 4); // show up to 4 related products
+  ).slice(0, 4); 
 
   return (
     <div className='relatedproducts'>

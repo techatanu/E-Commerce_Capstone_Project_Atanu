@@ -58,3 +58,17 @@
     height: 3px;
     background: #ced6e0;
 }
+@media (max-width: 600px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+  .footer-social-icon {
+    gap: 10px;
+  }
+  .footer-logo {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

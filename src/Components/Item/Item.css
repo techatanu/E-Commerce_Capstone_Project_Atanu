@@ -29,3 +29,44 @@
     border-radius: 10px;
    
 }
+
+
+
+/* Add at the end of the file */
+@media (max-width: 900px) {
+  .item {
+    width: 250px;
+  }
+  .item img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .item img {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .item {
+    width: 98vw;
+    min-width: 0;
+    margin: 0 auto 12px auto;
+  }
+  .item img {
+    width: 100%;
+    min-width: 0;
+  }
+  .item-prices {
+    gap: 10px;
+    font-size: 15px;
+  }
+}

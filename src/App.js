@@ -12,6 +12,8 @@ import women_banner from './Components/Assets/banner_women.png';
 import kids_banner from './Components/Assets/banner_kids.png';
 import { ShopCategory } from './Pages/ShopCategory';
 import { CartItems } from './Components/CartItems/CartItems';
+import { About } from './Pages/About';
+import { Contact } from './Pages/Contact';
 
 
 function AppContent() {
@@ -22,6 +24,8 @@ function AppContent() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='/women' element={<ShopCategory banner={women_banner} category="women" />} />
         <Route path='/kids' element={<ShopCategory banner={kids_banner} category="kid" />} />
         <Route path='/product' element={<Product />} />

@@ -24,3 +24,71 @@ hr{
     gap: 30px;
 
 }
+
+
+
+
+/* Add at the end of the file */
+@media (max-width: 1200px) {
+  .collections {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .collections {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .new-collections h1 {
+    font-size: 32px;
+  }
+  .newsletter {
+    width: 95vw;
+    padding: 0 2vw;
+    min-height: 200px;
+  }
+  .newsletter div {
+    width: 90vw;
+    min-width: 0;
+    height: 50px;
+  }
+  .newsletter input {
+    width: 60vw;
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .newsletter div button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+  .newsletter h1 {
+    font-size: 28px;
+  }
+  .newsletter p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .collections {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .new-collections h1 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .collections {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    width: 100vw;
+    margin: 0;
+  }
+  .new-collections h1 {
+    font-size: 18px;
+  }
+}
