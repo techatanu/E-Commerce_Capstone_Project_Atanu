@@ -1,4 +1,4 @@
-import p1_img from "/images/product_1.png";
+import p1_img from "frontend-app/public/product_1.png";
 import p2_img from "/images/product_2.png";
 import p3_img from "/images/product_3.png";
 import p4_img from "/images/product_4.png";
